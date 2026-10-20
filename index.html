@@ -1,89 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidra Saif | Personal Portfolio</title>
+    <title>University of Layyah Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <h2>Sidra Saif</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h2>UL Blog</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
 
-<section id="home" class="hero">
-    <p>WELCOME TO MY PORTFOLIO</p>
-    <h1>Hi, I'm <span>Sidra Saif</span></h1>
-    <h2>BS Information Technology Student</h2>
-    <p>
-        I am an IT student interested in Web Designing,
-        UI/UX Design and modern web technologies.
-    </p>
-    <a href="#contact" class="btn">Contact Me</a>
-</section>
+    <section class="hero" id="home">
+        <h1>Welcome to University of Layyah</h1>
+        <p>Explore university life, education and campus activities.</p>
+        <a href="#blogs" class="btn">Explore Blogs</a>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        My name is Sidra Saif. I am a BS Information Technology
-        student. I enjoy learning new technologies and creating
-        attractive and user-friendly websites.
-    </p>
-</section>
+    <section class="about" id="about">
+        <h2>About UL Blog</h2>
+        <p>
+            UL Blog is a student blog website that shares educational
+            information, campus activities and university stories.
+        </p>
+    </section>
 
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Figma</div>
-        <div class="card">Canva</div>
-        <div class="card">WordPress</div>
-    </div>
-</section>
+    <section class="blogs" id="blogs">
+        <h2>Latest Blogs</h2>
 
-<section id="projects">
-    <h2>My Projects</h2>
+        <input type="text" id="search"
+               placeholder="Search blog posts...">
 
-    <div class="cards">
-        <div class="project-card">
-            <h3>Student Management System</h3>
-            <p>A database project for managing student information.</p>
+        <div class="blog-container">
+
+            <div class="blog-card">
+                <img src="https://ul.edu.pk/storage/career/files/Faculty-bdf81.jpg"
+                     alt="University of Layyah faculty">
+
+                <h3>University Campus</h3>
+                <p>
+                    The University of Layyah provides students with
+                    an environment for learning and personal growth.
+                </p>
+                <button class="read-btn">Read More</button>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://ul.edu.pk/career/assets/uploads/2-547cf.jpeg"
+                     alt="Students and computer lab">
+
+                <h3>Computer Lab and Education</h3>
+                <p>
+                    Computer labs help students practise their
+                    technical skills and learn new technologies.
+                </p>
+                <button class="read-btn">Read More</button>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://ul.edu.pk/storage/career/files/111-68910.jpeg"
+                     alt="University awareness seminar">
+
+                <h3>Student Awareness Seminar</h3>
+                <p>
+                    Seminars help students gain knowledge,
+                    share ideas and learn about important topics.
+                </p>
+                <button class="read-btn">Read More</button>
+            </div>
+
         </div>
 
-        <div class="project-card">
-            <h3>Library Management System</h3>
-            <p>A system for managing books and library records.</p>
-        </div>
+        <p id="noResult" hidden>No blog posts found.</p>
+    </section>
 
-        <div class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>A single-page portfolio website created using HTML and CSS.</p>
-        </div>
-    </div>
-</section>
+    <footer>
+        <p>University of Layyah Blog | Created for Web Technology</p>
+        <p>&copy; 2026 UL Blog</p>
+        <a href="https://ul.edu.pk/" target="_blank">
+            Official University Website
+        </a>
+    </footer>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: sidrasaif1075@gmail.com</p>
-    <p>Thank you for visiting my portfolio!</p>
-</section>
-
-<footer>
-    <p>© 2026 Sidra Saif. All Rights Reserved.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
-  </html>
+</html>
